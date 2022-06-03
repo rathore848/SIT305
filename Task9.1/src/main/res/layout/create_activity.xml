@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_Advert">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Post Type"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/type">
+
+        <RadioButton
+            android:id="@+id/Lost"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="25dp"
+            android:text="LOST" />
+
+        <RadioButton
+            android:id="@+id/Found"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="-48dp"
+            android:text="FOUND" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@id/textView"
+        android:hint="FULL NAME"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Phone"
+        android:layout_below="@id/title"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Description"
+        android:layout_below="@id/contact"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Date"
+        android:layout_below="@id/description"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Location"
+        android:layout_below="@id/date"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/getloc_button"
+        android:layout_width="370dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="124dp"
+        android:text="Get My Location"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="SAVE"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
